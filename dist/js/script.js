@@ -45,20 +45,20 @@ toggleDarkMode.addEventListener('click', function() {
 window.onscroll = function () {
     const nav = document.querySelector('nav');
     const fixedNav = nav.offsetTop;
-    // const toTop = document.querySelector('#to-top');
+    const toTop = document.querySelector('#to-top');
   
     if (window.pageYOffset > fixedNav) {
       nav.classList.add('navbar-fixed');
       nav.classList.remove('absolute');
       console.log('fixed')
-    //   toTop.classList.remove('hidden');
-    //   toTop.classList.add('flex');
+      toTop.classList.remove('hidden');
+      toTop.classList.add('flex');
     } else {
       nav.classList.remove('navbar-fixed');
       nav.classList.add('absolute');
       console.log('remove fixed')
-    //   toTop.classList.remove('flex');
-    //   toTop.classList.add('hidden');
+      toTop.classList.remove('flex');
+      toTop.classList.add('hidden');
     }
 };
 
