@@ -21,13 +21,14 @@
     <link rel="stylesheet" href="./dist/css/output.css">
     <!-- Flowbite -->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.css" />
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
-<body class="dark:bg-[#171717] bg-white">
-
+<body class="dark:bg-[#171717] bg-white overflow-x-hidden">
     <!-- Navbar Start-->
     <nav class="bg-[#fafafa] border-gray-200 px-2 sm:px-4 md:py-0 py-2 dark:bg-[#242424] w-full absolute top-0 left-0 z-50 shadow dark:bg-opacity-50">
-        <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <div class="container flex flex-wrap items-center justify-between mx-auto w-full">
             <a href="https://flowbite.com/" class="flex items-center">
                 <img src="./dist/img/logoduf.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
                 <span class="self-center text-xl font-bold whitespace-nowrap dark:text-amber-500 dark:hover:text-amber-500">Daichi Unite Familia</span>
@@ -65,7 +66,7 @@
     <!-- Hero Start -->
     <section class="text-gray-600 dark:text-gray-400 body-font sm:px-4 pt-10 min-h-screen md:min-h-0" id="home">
         <div class="container mx-auto flex px-5 md:pt-20 py-10 md:flex-row flex-col-reverse items-center md:justify-between">
-            <div class="md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 text-center">
+            <div data-aos="fade-right" data-aos-duration="1500" class="md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 text-center">
                 <h1 class="title-font md:text-4xl text-2xl md:tracking-tight mb-4 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-amber-400"> <span id="typed"></span></h1>
                 <p class="md:mb-8 mb-2 md:text-left text-base lg:text-xl md:text-sm">Keluarga yang beraksi di tanah yang besar. Tanah yang besar ini yaitu event jejepangan (karena memakai kata jepang <span class="font-extrabold bg-clip-text text-transparent bg-amber-500" >"Daichi"</span>). <br>
                 Arti kata <span class="font-extrabold bg-clip-text text-transparent bg-amber-500" >"Daichi"</span> : Tanah yang lapang, kebijaksanaan, agung.
@@ -81,17 +82,17 @@
                     </span>
                 </span>
             </div>
-            <div class="lg:max-w-md lg:w-2/5 md:w-1/2 w-4/6 md:mb-16 mb-5">
+            <div data-aos="fade-left" data-aos-duration="1500" class="lg:max-w-md lg:w-2/5 md:w-1/2 w-4/6 md:mb-16 mb-5">
                 <img class="object-cover object-center rounded-full hover:scale-105 transition" alt="hero" src="./dist/img/logoduf.png">
             </div>
         </div>
     </section>
 
     <!-- Sponsor -->
-    <section class="md:pt-20" id="partner">
+    <section class="pt-20" id="partner">
         <div class="bg-[#fafafa] dark:bg-[#242424]">
             <div class="container mx-auto">
-                <div class="flex w-full flex-wrap justify-center py-5">
+                <div class="flex w-full flex-wrap justify-center py-5" data-aos="zoom-out" data-aos-duration="1000">
                     <div class="lg:w-1/6 md:w-1/3 sm:w-1/2 p-2 flex justify-center">
                         <img src="./dist/img/logoduf.png" alt="" class="h-20 grayscale hover:grayscale-0 cursor-pointer transition hover:scale-110">
                     </div>
@@ -123,7 +124,7 @@
           <div class="flex justify-center mb-14">
             <div class="w-32 h-1 rounded-full bg-amber-500 inline-flex"></div>
           </div>
-          <div class="flex justify-center">
+          <div class="flex justify-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <div class="md:w-1/2 sm:w-2/3 w-6/6">
                 <div id="accordion-collapse" data-accordion="open">
                     <h2 id="accordion-collapse-heading-1">
@@ -187,7 +188,7 @@
     <!-- Tim -->
     <section id="tim" class="text-gray-600 dark:text-gray-400">
         <div class="container mx-auto">
-            <div class="px-4 py-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24">
+            <div class="px-4 py-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 <div class="mx-auto mb-10 lg:max-w-xl sm:text-center">
                     <h1 class="sm:text-3xl text-2xl font-bold title-font text-center text-gray-900 dark:text-gray-300 mb-2">Tim</h1>
                     <div class="flex justify-center mb-14">
@@ -276,6 +277,11 @@
     <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
     <!-- Javascript Typed JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Javascript Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- javascript Utama -->
     <script src="./dist/js/script.js"></script>
 </body>
