@@ -50,13 +50,13 @@ window.onscroll = function () {
     if (window.pageYOffset > fixedNav) {
       nav.classList.add('navbar-fixed');
       nav.classList.remove('absolute');
-      console.log('fixed')
+    //   console.log('fixed')
       toTop.classList.remove('hidden');
       toTop.classList.add('flex');
     } else {
       nav.classList.remove('navbar-fixed');
       nav.classList.add('absolute');
-      console.log('remove fixed')
+    //   console.log('remove fixed')
       toTop.classList.remove('flex');
       toTop.classList.add('hidden');
     }
